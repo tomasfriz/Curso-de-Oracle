@@ -1,152 +1,149 @@
-
-body{
+body {
     width: 100%;
     background: #ededed;
     font-family: 'Raleway', sans-serif;
 }
 
 /*Header*/
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 8rem;
 }
 
-.header h3{
+.header h3 {
     display: flex;
     align-items: center;
     font-size: 1.3em;
 }
 
-.header h3 img{
+.header h3 img {
     width: 40px;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     align-items: center;
 }
 
-.header-nav ul{
+.header-nav ul {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.header-nav ul li{
+.header-nav ul li {
     margin-left: 1rem;
 
 }
 
-.header-nav ul li a{
+.header-nav ul li a {
     font-size: 0.8em;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
 }
 
-.header-nav ul li:hover{
+.header-nav ul li:hover {
     transform: scale(1.1);
 }
 
-.header-nav ul li:last-child{
+.header-nav ul li:last-child {
     font-weight: bold;
 }
 
 
 /*Perfil*/
 
-.perfil{
+.perfil {
     display: flex;
     padding: 0.5rem 8rem;
     justify-content: space-between;
     align-items: center;
 }
 
-.perfil-div{
+.perfil-div {
     width: 73%;
 }
 
-.perfil-div h1{
+.perfil-div h1 {
     font-size: 2.4em;
     font-weight: bold;
     padding-top: 1rem;
 
 }
 
-.perfil-div h2{
+.perfil-div h2 {
     font-size: 1.5em;
     font-style: italic;
     padding-top: 1rem;
 }
 
-.perfil-div-contacto{
+.perfil-div-contacto {
     padding-top: 1rem;
 }
 
-.perfil-div-contacto a{
+.perfil-div-contacto a {
     text-decoration: none;
     font-size: 1.5em;
     padding-right: 2rem;
     color: black;
 }
 
-.perfil-div-contacto a:hover{
+.perfil-div-contacto a:hover {
     text-decoration: underline;
 }
 
-.perfil-img{
-    width:25%;
+.perfil-img {
+    width: 25%;
 }
 
-.perfil-img img{
+.perfil-img img {
     border-radius: 100%;
     width: 100%;
 }
 
-
-
 /*Cambio de font-size a todos los titulos*/
 
-.titulos{
+.titulos {
     font-size: 2.5em;
-    font-weight:700
+    font-weight: 700
 }
 
 
 /*SobreMi*/
 
-.sobreMi{
+.sobreMi {
     padding: 0.5rem 8rem;
     background: #EAF2FD;
 }
 
-.sobreMi div{
+.sobreMi div {
     padding-right: 20rem;
 }
 
-.sobreMi div p{
+.sobreMi div p {
     font-size: 1.3rem;
     font-style: italic;
     padding-top: 1.5rem;
 }
 
-.sobreMi div img{
+.sobreMi div img {
     width: 100px;
     padding-top: 1rem;
 }
 
 /*Secciones Skills - Other Skills - Hobbies*/
 
-.secciones{
+.secciones {
     text-align: center;
 }
 
-.secciones-titulo{
+.secciones-titulo {
     margin-top: 2rem;
 }
 
-.secciones-lista ul{
+.secciones-lista ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,7 +151,7 @@ body{
     margin-top: 3vh;
 }
 
-.secciones-lista ul li{
+.secciones-lista ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,49 +159,49 @@ body{
     width: 174px;
     height: 176px;
     background: #ffffff;
-    
+
 }
 
-.secciones-lista li img:hover{
+.secciones-lista li img:hover {
     transform: scale(1.2);
     filter: drop-shadow(2px 4px 1px hsl(0, 0%, 68%));
     transition: .1s all;
 }
 
-.secciones-lista h3{
+.secciones-lista h3 {
     padding-top: 0.5rem;
     font-size: 1.5em;
 }
 
-.secciones-lista ul li img{
+.secciones-lista ul li img {
     width: 50%;
 }
 
 
 /*Formacion Academica*/
 
-.formacion-academica{
+.formacion-academica {
     padding: 0.5rem 8rem 4rem 8rem;
     margin-top: 1.5rem;
     background: #EAF2FD;
 }
 
-.formacion-academica-titulo{
+.formacion-academica-titulo {
     text-align: center;
     margin-top: 2rem;
 }
 
-.formacion-lista{
+.formacion-lista {
     display: flex;
     justify-content: space-between;
     margin-top: 3vh;
 }
 
-.formacion-lista li{
+.formacion-lista li {
     width: 30%;
 }
 
-.formacion-lista li div{
+.formacion-lista li div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,17 +209,17 @@ body{
     height: 200px;
 }
 
-.formacion-lista img{
+.formacion-lista img {
     width: 50%;
 }
 
-.formacion-lista li h2{
+.formacion-lista li h2 {
     font-size: 1.4em;
     font-weight: 700;
     padding-top: 1rem;
 }
 
-.formacion-lista li h3{
+.formacion-lista li h3 {
     font-size: 1em;
     font-weight: 500;
     font-style: italic;
@@ -230,17 +227,17 @@ body{
 
 /*Experiencia*/
 
-.experiencia-titulo{
+.experiencia-titulo {
     text-align: center;
     padding-top: 1rem;
 }
 
-.experiencia-seccion img{
+.experiencia-seccion img {
     width: 50%;
 }
 
 /*experiencia impar*/
-.experiencia-seccion:nth-child(even){
+.experiencia-seccion:nth-child(even) {
     padding: 2rem 0;
     display: flex;
     align-items: center;
@@ -249,7 +246,7 @@ body{
 
 
 /*experiencia par*/
-.experiencia-seccion:nth-child(odd){
+.experiencia-seccion:nth-child(odd) {
     padding: 2rem 0;
     display: flex;
     flex-direction: row-reverse;
@@ -258,7 +255,7 @@ body{
 }
 
 
-.experiencia-seccion .experiencia-descripcion{
+.experiencia-seccion .experiencia-descripcion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,35 +263,35 @@ body{
     padding: 0 2rem;
 }
 
-.experiencia-descripcion h2{
+.experiencia-descripcion h2 {
     font-size: 2em;
     font-weight: 700;
 }
 
-.experiencia-descripcion h3{
+.experiencia-descripcion h3 {
     font-size: 1.5em;
     font-weight: 500;
     font-style: italic;
-    
+
 }
 
-.button{
+.button {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 2vh;
 }
 
-.button a{
+.button a {
     text-decoration: none;
     padding: 0.5rem;
     border: 2px solid #2A7AE4;
-} 
+}
 
-.button-repositorio{
+.button-repositorio {
     color: #2A7AE4;
 }
 
-.button-repositorio:hover{
+.button-repositorio:hover {
     transform: scale(1.1);
 }
 
@@ -303,13 +300,13 @@ body{
     background: #2A7AE4;
 }
 
-.button-demo:hover{
+.button-demo:hover {
     transform: scale(1.1);
 }
 
 /*contacto*/
 
-.contacto{
+.contacto {
     display: flex;
     flex-direction: row;
     padding: 0.5rem 8rem;
@@ -317,27 +314,27 @@ body{
     gap: 1vh;
 }
 
-.mensaje-enviado{
+.mensaje-enviado {
     position: absolute;
     background: white;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.contacto-box-titulos .texto{
+.contacto-box-titulos .texto {
     font-size: 1.3em;
     font-weight: 400;
     padding-bottom: 0.5rem;
 }
 
-.contacto-box{
+.contacto-box {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.contacto-box-form{
+.contacto-box-form {
     position: relative;
     height: 80%;
     display: flex;
@@ -345,12 +342,12 @@ body{
     justify-content: space-between;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
 }
 
-.input-padron{
+.input-padron {
     height: 50px;
     font-size: 1.2em;
     border: 0px;
@@ -358,38 +355,38 @@ body{
 
 }
 
-.contacto-box-form--mensaje .input-padron{
+.contacto-box-form--mensaje .input-padron {
     height: 100%;
- }
+}
 
- .contacto-box-form--mensaje{
+.contacto-box-form--mensaje {
     height: 40%;
- }
+}
 
- .contacto-box-form--mensaje #mensaje::placeholder{
+.contacto-box-form--mensaje #mensaje::placeholder {
     font-size: 1.5em;
 }
 
 
-.contacto--invalid .mensaje-error{
+.contacto--invalid .mensaje-error {
     display: block;
     font-size: 1em;
     color: red;
 }
 
-.mensaje-error{
-    display:none;
+.mensaje-error {
+    display: none;
 }
 
 
-.contacto--invalid .input-padron{
+.contacto--invalid .input-padron {
     border: 1px solid red;
     color: red;
 }
 
 
 
-.enviar{
+.enviar {
     width: 130px;
     height: 40px;
     font-size: 0.8em;
@@ -397,7 +394,7 @@ body{
     border: 1px solid #2A7AE4;
 }
 
-.enviar:hover{
+.enviar:hover {
     color: white;
     background: #2A7AE4;
 }
@@ -406,7 +403,7 @@ body{
 
 /*footer*/
 
-footer{
+footer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -416,135 +413,135 @@ footer{
 }
 
 
-footer img{
+footer img {
     width: 30px;
 }
 
-footer h3{
+footer h3 {
     font-size: 1em;
     font-weight: 500;
     font-style: italic;
 }
 
-footer h3 em{
+footer h3 em {
     font-weight: 700;
     text-transform: uppercase;
 }
 
 /*---------TABLET-------------------------------*/
 
-@media only screen and (max-width: 1040px){
+@media only screen and (max-width: 1040px) {
 
     /*header*/
 
-    .header{
+    .header {
         padding: 0.5rem 2rem;
     }
 
-    .header-nav ul li{
+    .header-nav ul li {
         display: none;
     }
 
-    .header-nav ul li:last-child{
-        display:contents;
+    .header-nav ul li:last-child {
+        display: contents;
     }
 
-    .perfil{
+    .perfil {
         padding: 0.5rem 2rem;
     }
 
-    .perfil-div h1{
+    .perfil-div h1 {
         font-size: 1.8em;
-    
+
     }
-    
-    .perfil-div h2{
+
+    .perfil-div h2 {
         font-size: 1.1em;
     }
 
-    .perfil-div-contacto a{
+    .perfil-div-contacto a {
         font-size: 1.1em;
     }
 
 
     /*Cambio de font-size a todos los titulos*/
-    .titulos{
+    .titulos {
         font-size: 1.8em;
     }
 
 
     /*sobreMi*/
 
-    .sobreMi{
+    .sobreMi {
         padding: 0.5rem 2rem;
     }
 
-    .sobreMi div{
+    .sobreMi div {
         padding: 0;
     }
 
     /*Formacion Academica*/
 
-    .formacion-academica{
+    .formacion-academica {
         padding: 0.5rem 2rem;
     }
 
-    .formacion-lista li div{
+    .formacion-lista li div {
         height: 150px;
     }
 
-    .formacion-lista li h2{
+    .formacion-lista li h2 {
         font-size: 1.2em;
     }
-    
-    .formacion-lista li h3{
+
+    .formacion-lista li h3 {
         font-size: 1em;
     }
 
     /*Experiencia*/
 
-    .experiencia{
+    .experiencia {
         padding: 0.5rem 2rem;
     }
 
-    .experiencia-seccion img{
+    .experiencia-seccion img {
         width: 100%
     }
 
-    
-    .experiencia-seccion:nth-child(even){
+
+    .experiencia-seccion:nth-child(even) {
         flex-direction: column;
     }
 
-    .experiencia-seccion:nth-child(odd){
+    .experiencia-seccion:nth-child(odd) {
         flex-direction: column;
 
     }
 
-   .experiencia-descripcion{
+    .experiencia-descripcion {
         width: 100%;
         margin-top: 1rem;
     }
 
     /*contacto*/
 
-    .contacto-img{
-        display: none;  
+    .contacto-img {
+        display: none;
     }
 
-    .contacto{
+    .contacto {
         padding: 0.5rem 2rem;
     }
 
-    .contacto-box{
+    .contacto-box {
         width: 100%;
     }
 
-    .contacto-box-form{
+    .contacto-box-form {
         height: 100%;
     }
 
-    .box{
+    .box {
         margin-bottom: 1rem;
     }
 
@@ -553,154 +550,155 @@ footer h3 em{
 }
 
 /*---------TABLET vertical / MOVIL HORIZONTAL-------------------------------*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
     /*Perfil*/
-    .perfil-div h1{
+    .perfil-div h1 {
         font-size: 1.2em;
-    
+
     }
-    
-    .perfil-div h2{
+
+    .perfil-div h2 {
         font-size: 0.8em;
     }
 
-    .perfil-div-contacto a{
+    .perfil-div-contacto a {
         text-decoration: none;
         font-size: 0.8em;
         padding-right: 1rem;
     }
 
     /*sobreMi*/
-    .sobreMi div p{
+    .sobreMi div p {
         font-size: 1.2rem;
     }
 
     /*Formacion Academica*/
-    .formacion-academica{
+    .formacion-academica {
         padding: 0.5rem 1rem;
     }
 
-    .formacion-lista li div{
+    .formacion-lista li div {
         height: 100px;
     }
 
-    .formacion-lista li h2{
+    .formacion-lista li h2 {
         font-size: 1em;
     }
-    
-    .formacion-lista li h3{
+
+    .formacion-lista li h3 {
         font-size: 0.8em;
     }
 
-    
+
 
 }
 
-/*---------MOVIL MERTICAL-------------------------------*/
-@media only screen and (max-width: 440px){
+/*---------MOVIL VERTICAL-------------------------------*/
+@media only screen and (max-width: 440px) {
 
-    
+
     /*header*/
-    .header{
+    .header {
         padding: 0.5rem 1rem;
     }
 
-    .header h3 img{
+    .header h3 img {
         width: 25px;
     }
 
-    .header h3{
+    .header h3 {
         font-size: 0.8em;
     }
 
-    .header-nav ul li a{
+    .header-nav ul li a {
         font-size: 0.6em;
     }
 
     /*Perfil*/
 
-    .perfil{
+    .perfil {
         flex-direction: column-reverse;
         padding: 0.5rem 1rem;
-        
+
     }
 
-    .perfil-div{
+    .perfil-div {
         width: 100%;
     }
 
-    .perfil-img{
-        width:100%;
+    .perfil-img {
+        width: 100%;
     }
 
-    .perfil-img img{
+    .perfil-img img {
         width: 35%;
         padding-left: 1rem;
     }
 
-    .perfil-div-contacto{
+    .perfil-div-contacto {
         text-align: center;
     }
 
     /*Cambio de font-size a todos los titulos*/
 
-    .titulos{
+    .titulos {
         font-size: 1.3em;
     }
 
     /*SobreMi*/
 
-    .sobreMi{
+    .sobreMi {
         padding: 0.5rem 1rem;
     }
 
-    .sobreMi div p{
+    .sobreMi div p {
         font-size: 0.9rem;
     }
-    
-    .sobreMi div img{
+
+    .sobreMi div img {
         width: 70px;
         padding-top: 1rem;
     }
 
 
     /*Formacion*/
-    .formacion-lista{
+    .formacion-lista {
         flex-direction: column;
         height: auto;
         justify-content: space-between;
     }
 
-    .formacion-academica-div{
+    .formacion-academica-div {
         padding: 1rem 2rem;
     }
 
-    .formacion-lista li div{
+    .formacion-lista li div {
         height: auto;
         padding: 1.5rem 0;
     }
-    .formacion-lista li{
+
+    .formacion-lista li {
         width: 100%;
         margin-bottom: 2rem;
-        
+
     }
 
     /*Experiencia*/
 
-    .experiencia-descripcion h2{
+    .experiencia-descripcion h2 {
         font-size: 1.5em;
     }
-    
-    .experiencia-descripcion h3{
+
+    .experiencia-descripcion h3 {
         font-size: 1em;
-        
+
     }
 
 
     /*Contacto*/
 
-    .contacto-box-titulos .texto{
+    .contacto-box-titulos .texto {
         font-size: 1.1em;
         font-weight: 300;
     }

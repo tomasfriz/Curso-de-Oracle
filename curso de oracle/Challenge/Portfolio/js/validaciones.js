@@ -1,45 +1,45 @@
 
-const tipoDeError =["valueMissing","patternMismatch","tooShort"];
+const tipoDeError = ["valueMissing", "patternMismatch", "tooShort"];
 
 const mensajeDeError = {
-    nombre:{
+    nombre: {
         valueMissing: "El campo nombre no puede estar vacío",
         tooShort: "Debe tener al menor 4 caracteres"
     },
-    email:{
+    email: {
         valueMissing: "El campo email no puede estar vacío",
         patternMismatch: "No coincide con una dirección de mail válida (nombre@dominio.xxx)"
     },
-    asunto:{
+    asunto: {
         valueMissing: "El campo asunto no puede estar vacío"
     },
-    mensaje:{
+    mensaje: {
         valueMissing: "El campo mensaje no puede estar vacío"
     },
 }
 
 
-export function validar(input){
+export function validar(input) {
 
-    if(input.validity.valid){
+    if (input.validity.valid) {
         input.parentElement.classList.remove("contacto--invalid");
-        input.parentElement.querySelector(".mensaje-error").innerHTML="";
-    }else{
+        input.parentElement.querySelector(".mensaje-error").innerHTML = "";
+    } else {
         input.parentElement.classList.add("contacto--invalid");
-        input.parentElement.querySelector(".mensaje-error").innerHTML= mostrarMensajeError(input);
+        input.parentElement.querySelector(".mensaje-error").innerHTML = mostrarMensajeError(input);
     }
-    
-} 
 
-function mostrarMensajeError(input){
+}
+
+function mostrarMensajeError(input) {
     let mensaje = "";
-    tipoDeError.forEach( (error) => {
+    tipoDeError.forEach((error) => {
 
-        if(input.validity[error]){
+        if (input.validity[error]) {
             mensaje = mensajeDeError[input.dataset.tipo][error];
         };
     });
-    
+
     return mensaje;
 };
 

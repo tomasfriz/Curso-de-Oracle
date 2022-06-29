@@ -1,8 +1,8 @@
 
-export function mensajeEnviado(){
+export function mensajeEnviado() {
     document.querySelector(".cartel-enviado").classList.add("mensaje-enviado");
 
-    setTimeout(()=>{
+    setTimeout(() => {
         document.querySelector(".cartel-enviado").classList.remove("mensaje-enviado");
-    },3000);
+    }, 3000);
 };

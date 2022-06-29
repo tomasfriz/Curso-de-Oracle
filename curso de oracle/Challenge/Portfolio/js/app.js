@@ -8,8 +8,8 @@ escuchador a cada uno, luego lo manda a calida*/
 
 const inputs = document.querySelectorAll(".input-padron");
 
-inputs.forEach( (input) => {
-    input.addEventListener("blur",(evento)=> {
+inputs.forEach((input) => {
+    input.addEventListener("blur", (evento) => {
         validar(evento.target);
     });
 
@@ -17,10 +17,10 @@ inputs.forEach( (input) => {
 
 /*Escucha el boton por si no hay ningun
 campo llleno, imprime los errores*/
-document.querySelector(".enviar").addEventListener("click", (event) =>{
-    inputs.forEach( (input) => {
+document.querySelector(".enviar").addEventListener("click", (event) => {
+    inputs.forEach((input) => {
         validar(input);
-        });
+    });
 });
 
 
@@ -30,12 +30,13 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
     event.preventDefault();
 
-    fetch("https://formsubmit.co/ajax/zoccojulian@gmail.com", {method : "POST",
-    body: new FormData(event.target)
+    fetch("https://formsubmit.co/ajax/tomyutnfra@gmail.com", {
+        method: "POST",
+        body: new FormData(event.target)
     }).then((respuesta) => {
         document.querySelector("form").reset();
         mensajeEnviado();
     }).catch((error) => alert(error));
-    
+
 
 });

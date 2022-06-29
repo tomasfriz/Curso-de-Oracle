@@ -1,4 +1,3 @@
-
 /*para poder ponerlo adelante de todo lo que venga despues
 el padre tiene que ser position:relative y el hijo que quiero
 poner adelante position:absolute*/
@@ -6,25 +5,26 @@ poner adelante position:absolute*/
 
 /*poner esta clase en el pacre de mensaje-enviado-texto
 para que aparezca el mensaje de enviado*/
-.mensaje-enviado{
+
+.mensaje-enviado {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    background:#ededed;
+    background: #ededed;
     width: 100%;
-    height:100%;
+    height: 100%;
     transition: 500ms;
 }
 
-.mensaje-enviado .mensaje-enviado-texto{
+.mensaje-enviado .mensaje-enviado-texto {
     display: block;
     background: #2A7AE4;
     padding: 2rem;
     transition: 500ms;
 }
 
-.mensaje-enviado .mensaje-enviado-texto h2{
+.mensaje-enviado .mensaje-enviado-texto h2 {
     display: block;
     font-size: 1.3em;
     color: #ededed;
@@ -32,16 +32,17 @@ para que aparezca el mensaje de enviado*/
 }
 
 
-.mensaje-enviado-texto{
+.mensaje-enviado-texto {
     display: none;
 }
-.mensaje-enviado-texto h2{
-    display:none;
+
+.mensaje-enviado-texto h2 {
+    display: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
-    .mensaje-enviado .mensaje-enviado-texto h2{
+    .mensaje-enviado .mensaje-enviado-texto h2 {
         font-size: 0.8em;
     }
 }
